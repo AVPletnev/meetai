@@ -5,6 +5,13 @@ import { Input } from "@/components/ui/input";
 import { authClient } from "@/lib/auth-client";
 import { useState } from "react";
 
+/**
+ * Renders the authentication UI for user sign-up, sign-in, and sign-out.
+ *
+ * Displays a logged-in state with a sign-out option if a user session exists. Otherwise, provides forms for creating a new user account and signing in, handling user input and authentication actions.
+ *
+ * @returns The authentication page React element.
+ */
 export default function Home() {
   const { data: session } = authClient.useSession();
 
