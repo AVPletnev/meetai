@@ -12,7 +12,7 @@ export const HomeView = () => {
   }
 
   return (
-    <div>
+    <div className="flex flex-col gap-4 p-4">
       <h1>Home</h1>
       logged in as {session?.user.name}
       <Button
